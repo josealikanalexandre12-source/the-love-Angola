@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LOVE ANGOLA - Match do Grupo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>THE LOVE ANGOLA ❤️</h1>
+
+        <!-- ECRÃ 1: DADOS BÁSICOS -->
+        <div id="register-screen">
+            <p>Descobre quem no grupo é a tua cara metade!</p>
+            <input type="text" id="user-name" placeholder="O teu nome" required>
+            
+            <select id="user-interest">
+                <option value="" disabled selected>Quem queres encontrar?</option>
+                   <option value="mulher">Uma rapariga do grupo</option>
+                      <option value="homem">Um rapaz do grupo</option>
+                <option value="ambos">Qualquer pessoa compatível</option>
+            </select>
+
+            <button onclick="startQuiz()">Começar o Teste</button>
+        </div>
+
+        <!-- ECRÃ 2: PERGUNTAS DE GOSTOS E ESTILO -->
+        <div id="quiz-screen" class="hidden">
+            <h2 id="question">Pergunta...</h2>
+            <div id="answer-buttons"></div>
+        </div>
+
+        <!-- ECRÃ 3: O PAR PERFEITO DO WHATSAPP -->
+         <div id="result-screen" class="hidden">
+            <h2>💘 O teu Par Perfeito é:</h2>
+            <div id="best-match-card" class="match-card"></div>
+            
+            <div id="other-matches"></div>
+
+            <!-- Botão para jogar no WhatsApp -->
+                <button id="share-whatsapp-btn" class="whatsapp-btn">📲 Partilhar Resultado no WhatsApp</button>
+            <button onclick="location.reload()" class="secondary-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>

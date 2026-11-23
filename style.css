@@ -1,0 +1,184 @@
+/* 1. Base e Paleta Editorial Sobria */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: radial-gradient(circle at top, #1d222d 0%, #111318 70%);
+    color: #F4EFEA;
+}
+
+/* 2. Contentor Principal */
+.app-container {
+    width: 100%;
+    max-width: 440px;
+    background-color: #1A1D24;
+    border: 1px solid #2A2F3A;
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #F4EFEA;
+    margin-bottom: 8px;
+}
+
+/* Ilustração SVG */
+.couple-illustration {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #262B35;
+}
+
+h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #F4EFEA;
+    margin-bottom: 16px;
+    line-height: 1.45;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #A3AAB8;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+/* 3. Inputs e Select */
+input, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #2E3440;
+    background-color: #13161C;
+    color: #F4EFEA;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input::placeholder {
+    color: #6E7687;
+}
+
+select option {
+    background-color: #1A1D24;
+    color: #F4EFEA;
+}
+
+input:focus, select:focus {
+    border-color: #E07A8B;
+    background-color: #171A22;
+}
+
+/* 4. Botões e Opções do Quiz */
+button, .btn {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 8px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #E07A8B;
+    transition: background-color 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+}
+
+.btn {
+    text-align: left;
+    background-color: #222630;
+    border-color: #2E3440;
+    color: #F4EFEA;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #cf6779;
+    transform: translateY(-1px);
+}
+
+.btn:hover {
+    background-color: #292E3A;
+    border-color: #E07A8B;
+    transform: translateY(-1px);
+}
+
+button:active, .btn:active {
+    transform: scale(0.99);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1px solid #343A46;
+    color: #A3AAB8;
+}
+
+.secondary-btn:hover {
+    background-color: #222630;
+    color: #F4EFEA;
+}
+
+/* 5. Cartão de Resultado e WhatsApp */
+.match-card {
+    background-color: #13161C;
+    border: 1px solid rgba(224, 122, 139, 0.45);
+    border-radius: 14px;
+    padding: 18px;
+    margin: 14px 0 18px;
+}
+
+.match-card h3 {
+    color: #F4EFEA;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
+.chat-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 14px;
+    background-color: #E07A8B;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.chat-link:hover {
+    background-color: #cf6779;
+}
+
+.hidden {
+    display: none;
+}
